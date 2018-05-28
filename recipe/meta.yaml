@@ -1,4 +1,4 @@
-{% set version = '0.2.0' %}
+{% set version = "0.2.8" %}
 
 package:
   name: r-worrms
@@ -9,7 +9,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/worrms_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/worrms/worrms_{{ version }}.tar.gz
-  sha256: 66f6238988b3deeecc1dee628979727c98b3db072b046e316ff8962192141bd7
+  sha256: 6516b701c32443be86832fdbd5ab3e4161441d4b425fe4cd97f9c3b30ce945b8
 
 build:
   number: 0
