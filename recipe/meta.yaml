@@ -1,4 +1,4 @@
-{% set version = '0.3.2' %}
+{% set version = "0.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/worrms_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/worrms/worrms_{{ version }}.tar.gz
-  sha256: ece1375e987c84f72e0f3ef23971821e265c6c253d117ecfc94d3df9c653bfcf
+  sha256: 8480c56a4412662a383103fef68e73fcf14e94fcb878c25df8c6d5a8c0146059
 
 build:
   merge_build_host: True  # [win]
