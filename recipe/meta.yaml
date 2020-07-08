@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.4.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/worrms_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/worrms/worrms_{{ version }}.tar.gz
-  sha256: 8480c56a4412662a383103fef68e73fcf14e94fcb878c25df8c6d5a8c0146059
+  sha256: 1ab228ea762a431a5e3a565b589b804fcb2865ceaa2b1459bd2ab3ebe8f5ebbe
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   script: R CMD INSTALL --build .
   rpaths:
@@ -46,10 +46,7 @@ about:
   home: https://github.com/ropensci/worrms
   license: MIT
   license_file: LICENSE
-  summary: Client for World Register of Marine Species (<http://www.marinespecies.org/>). Includes
-    functions for each of the API methods, including searching for names by name, date
-    and common names, searching using external identifiers, fetching synonyms, as well
-    as fetching taxonomic children and taxonomic classification.
+  summary: Client for World Register of Marine Species (<http://www.marinespecies.org/>). Includes functions for each of the API methods, including searching for names by name, date and common names, searching using external identifiers, fetching synonyms, as well as fetching taxonomic children and taxonomic classification.
   license_family: MIT
 
 extra:
