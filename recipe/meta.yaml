@@ -1,4 +1,4 @@
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/worrms_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/worrms/worrms_{{ version }}.tar.gz
-  sha256: 1ab228ea762a431a5e3a565b589b804fcb2865ceaa2b1459bd2ab3ebe8f5ebbe
+  sha256: 32b918f921a318078712ce6647e1b19cd7a9c550df8c37cb3d839277431fb9ad
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   noarch: generic
   script: R CMD INSTALL --build .
   rpaths:
